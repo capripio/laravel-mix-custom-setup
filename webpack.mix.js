@@ -15,7 +15,8 @@ mix.js('src/scripts/app.js', 'dist/scripts/')
    .sass('src/stylesheets/styles.scss', 'dist/stylesheets/')
    .mix.copy('src/*.html', 'dist/')
    .browserSync({
-       proxy:'http://localhost/car-project/dist/',
+       proxy:null,
+       server:['dist'],
        files:[
            './dist/*.*'
        ]
